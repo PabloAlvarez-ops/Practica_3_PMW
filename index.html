@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <h2>Calculadora de CORE</h2>
+
+  
+  <script type="text/javascript">
+  
+    const vaciar = () => {
+      document.getElementById("pantalla").value = "";
+    }
+
+    const cuadrado = () => {
+      let num = document.getElementById("pantalla");
+      num.value = num.value * num.value;
+    }
+  </script>
+  
+</head>
+<body>
+  Número:
+  <input type="text" id="pantalla" onclick="vaciar()">
+  <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup>
+  </button>
+  <h2 id="info" class="grande" title="Info sobre número">Info sobre número</h2>
+  
+ </body>
+</html>
