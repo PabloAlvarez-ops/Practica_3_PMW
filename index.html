@@ -19,13 +19,49 @@
     }
   </script>
   
+  
 </head>
 <body>
+  
   Número:
   <input type="text" id="pantalla" onclick="vaciar()">
-  <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup>
-  </button>
+  
   <h2 id="info" class="grande" title="Info sobre número">Info sobre número</h2>
   
- </body>
+  
+  <div>
+      
+    <h3>Operaciones unitarias</h3>
+    <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+    <button id="modulo" onclick="mod()">Mod</button>
+    <button id="factorial" onclick="fact()">n!</button>
+ 
+  </div>
+
+
+  
+  <div>
+    
+    <h3>Operaciones binarias</h3>
+    <button id="suma" onclick="add()">+</button>
+    <button id="multiplicacion" onclick="mult()">*</button>
+    <button id="igual" onclick="eq()">=</button>
+  
+  </div>
+
+
+
+  <div>
+    
+    <h3>Operaciones en formato CSV</h3>
+    <button id="sumatorio" onclick="sumatorio()">Σx</button>
+    <button id="ordenar" onclick="ordenar()">ordenar</button>
+    <button id="revertir" onclick="revertir()">revertir</button>
+    <button id="quitar" onclick="quitar()">quitar</button>
+
+  </div>
+  
+    
+
+</body>
 </html>
