@@ -18,3 +18,6 @@ function mod(){
 
 function fact(){
   let num = document.getElementById("pantalla");
+  if(num.value == 0 || num.value == 1){
+    return 1
+  }
