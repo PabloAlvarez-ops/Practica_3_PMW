@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
   
+<head>
   <title>Calculadora</title>
   <meta charset="utf-8">
   <link href="estilo_index.css" rel="stylesheet" type="text/css">
-  
-  <script type="text/javascript">
-    
-    function vaciar(){
-      docuemnt.getElementById("pantalla") = "";
-    }
-
-    function cuadrado(){
-      let num = document.getElementById("pantalla");
-      num.value = num.value * num.value;
-    }
-
-    function mod(){
-      let num = document.getElementById("pantalla");
-      resultado = num.value+1;
-      return resultado
-    }
-
-  </script>
-
-  
+  <script src="script.js"></script>
 </head>
-<body>
+
   
-     <h2>Calculadora de CORE</h2>
+  <body>
+    
+    <div>
+    <h2>Calculadora de CORE</h2>
     
     Número:
     <input type="text" id="pantalla" onclick="vaciar()">
     <br></br>
-  
+      
     <h2 id="info" class="grande" title="Info sobre número">Info sobre número</h2>
-  
+    </div>
 
+
+
+    <div>
     <h3>Operaciones unitarias</h3>
     <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
     <button id="modulo" onclick="mod()">Mod</button>
     <button id="factorial" onclick="fact()">n!</button>
- 
+    </div>
+
+
     
+    <div>
     <h3>Operaciones binarias</h3>
     <button id="suma" onclick="add()">+</button>
     <button id="multiplicacion" onclick="mult()">*</button>
     <button id="igual" onclick="eq()">=</button>
-  
- 
+    </div>
+
+    
+    
+    <div>
     <h3>Operaciones en formato CSV</h3>
     <button id="sumatorio" onclick="sumatorio()">Σx</button>
     <button id="ordenar" onclick="ordenar()">ordenar</button>
     <button id="revertir" onclick="revertir()">revertir</button>
     <button id="quitar" onclick="quitar()">quitar</button>
+    </div>
 
-
+    
 </body>
 </html>
