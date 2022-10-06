@@ -3,52 +3,44 @@
   
 <head>
   <title>Calculadora</title>
-  <meta charset="utf-8">
-  <link href="estilo_index.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8"m>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="script.js"></script>
 </head>
+  
+<body>
+  <div>
+  <h2 id="info" class="grande" title="Info sobre número"> Info sobre el número </h2>
+  Número:
+  <input type="text" id="pantalla" onclick="vaciar()">
+  </div>
+  
+  <h3> Operaciones unitarias </h3>
+  
+  <div>
+  <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+  <button id="mod" onclick="mod()">Mod</button>
+  <button id="factorial" onclick="fact()">n!</button>
+  </div>
 
   
-  <body>
-    
-    <div>
-    <h2>Calculadora de CORE</h2>
-    
-    Número:
-    <input type="text" id="pantalla" onclick="vaciar()">
-    <br></br>
-      
-    <h2 id="info" class="grande" title="Info sobre número">Info sobre número</h2>
-    </div>
+  <h3> Operaciones binarias </h3>
+  
+  <div>
+  <button id="suma" onclick="add()">+</button>
+  <button id="multiplicacion" onclick="mul()">*</button>
+  <button id="igual" onclick="eq()">=</button>
+  </div>
 
-
-
-    <div>
-    <h3>Operaciones unitarias</h3>
-    <button id="cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
-    <button id="modulo" onclick="mod()">Mod</button>
-    <button id="factorial" onclick="fact()">n!</button>
-    </div>
-
-
-    
-    <div>
-    <h3>Operaciones binarias</h3>
-    <button id="suma" onclick="add()">+</button>
-    <button id="multiplicacion" onclick="mult()">*</button>
-    <button id="igual" onclick="eq()">=</button>
-    </div>
-
-    
-    
-    <div>
-    <h3>Operaciones en formato CSV</h3>
-    <button id="sumatorio" onclick="sumatorio()">Σx</button>
-    <button id="ordenar" onclick="ordenar()">ordenar</button>
-    <button id="revertir" onclick="revertir()">revertir</button>
-    <button id="quitar" onclick="quitar()">quitar</button>
-    </div>
-
-    
-</body>
+  
+  <h3> Operaciones en formato CSV </h3>
+  
+  <div>
+  <button id="sumatorio" onclick="sumatorio()">Σx</button>
+  <button id="ordenar" onclick="ordenar()">ord</button>
+  <button id="revertir" onclick="revertir()">rev</button>
+  <button id="quitar" onclick="quitar()">quitar</button>
+  </div>
+  
+ </body>
 </html>
