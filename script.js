@@ -147,7 +147,6 @@ function eq() { //Al pulsar el boton de igual, en funcion del operador introduci
 }
 
 
-
 // 4. Operaciones en formato CSV //
 
 function sumatorio() {

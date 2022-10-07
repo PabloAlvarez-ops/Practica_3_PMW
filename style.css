@@ -1,5 +1,20 @@
-body, html {
-  background: #A9CCE3;
+html, body{
+  color: #BFC9CA;
+  background: #212F3C;
 }
 
+h1{
+  color:  #2980B9;
+}
 
+h2{
+  color: #16A085;
+}
+
+h3{
+  color: lightblue;
+}
+
+button{
+  background:#F5CBA7;
+}
