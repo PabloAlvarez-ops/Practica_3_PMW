@@ -56,14 +56,26 @@
 
     const guardaInput = (numInput) => {
       switch (operador) {
-        case "multiplicador":
+        case "multiplicar":
           total *= numInput;
           break;
         case "":
           total = numInput;
           break;
-        case "sumador":
+        case "sumar":
           total += numInput;
+          break;
+        case "restar":
+          total -= numInput;
+          break;
+        case "dividir":
+          total /= numInput;
+          break;
+        case "resto":
+          total %= numInput;
+          break;
+        case "potencia":
+          total **= numInput;
           break;
         default:
           break;
@@ -74,28 +86,60 @@
     const mul = () => {
       guardaInput(Number(document.getElementById("pantalla").value));
       total = document.getElementById("pantalla").value;
-      operador = "multiplicador";
+      operador = "multiplicar";
       vaciar();
-      
-
     }
 
     const add = () => {
       guardaInput(Number(document.getElementById("pantalla").value));
-      total = document.getElementById("pantalla").value;
-      operador = "sumador";
+      total = Number(document.getElementById("pantalla").value);
+      operador = "sumar";
       vaciar();
-      
+    }
 
+    const rest = () => {
+      guardaInput(Number(document.getElementById("pantalla").value));
+      total = document.getElementById("pantalla").value;
+      operador = "restar";
+      vaciar();
+    }
+
+    const div = () => {
+      guardaInput(Number(document.getElementById("pantalla").value));
+      total = document.getElementById("pantalla").value;
+      operador = "dividir";
+      vaciar();
+    }
+
+    const res = () => {
+      guardaInput(Number(document.getElementById("pantalla").value));
+      total = document.getElementById("pantalla").value;
+      operador = "resto";
+      vaciar();
+    }
+
+    const pot = () => {
+      guardaInput(Number(document.getElementById("pantalla").value));
+      total = document.getElementById("pantalla").value;
+      operador = "potencia";
+      vaciar();
     }
 
     const eq = () => {
       guardaInput(Number(document.getElementById("pantalla").value));
       operador = "";
-       if (operador === "multiplicador") {
+       if (operador === "multiplicar") {
          num.value *= total;
-       } else if (operador === "sumador" ) {
+       } else if (operador === "sumar" ) {
          num.value += total;
+       } else if(operador === "restar") {
+         num.value -= total;
+       } else if(operador === "dividir") {
+         num.value /= total
+       } else if(operador === "resto") {
+         num.value %= total
+       } else if(operador === "potencia") {
+         num.value **= total
        }
       document.getElementById("pantalla").value = total;
       rellenar_info();
