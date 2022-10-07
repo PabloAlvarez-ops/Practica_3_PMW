@@ -176,14 +176,12 @@ const sortNumbers = (a, b) => {
     let listaString = document.getElementById("pantalla").value; //Obtenemos el input introducido
     let arrayNumeros = listaString.split(","); // Separamos el input por comas y el resultado lo almacena en una lista
     document.getElementById("pantalla").value = arrayNumeros.sort(sortNumbers); // modificamos el input para que muestre la lista de numeros ordenada de forma ascendente.
-    rellenar_info();
   }
 
 function revertir() {
     let listaString = document.getElementById("pantalla").value; //Obtenemos el input introducido
     let arrayNumeros = listaString.split(","); // Separamos el input por comas y el resultado lo almacena en una lista
     document.getElementById("pantalla").value = arrayNumeros.reverse(sortNumbers); // modificamos el input para que muestre la lista de numeros ordenada de forma descendente.
-    rellenar_info();
   }
 
 function quitar() {
@@ -191,7 +189,6 @@ function quitar() {
       let arrayNumeros = listaString.split(","); // Separamos el input por comas y el resultado lo almacena en una lista
       arrayNumeros.pop(); // eliminamos el ultimo elemento de la lista
       document.getElementById("pantalla").value = arrayNumeros; // modificamos el input para que muestre la lista de numeros con el ultimo eliminado.
-      rellenar_info();
 
     }
 
